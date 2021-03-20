@@ -1,7 +1,6 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    
+  <div id="app2">
+    <img alt="Vue logo" src="../assets/logo.png">
   </div>
 </template>
 
@@ -10,10 +9,7 @@
 
 
 export default {
-  name: 'Home',
-  components: {
-    
-  }
+
 }
 </script>
 
