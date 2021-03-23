@@ -7,21 +7,21 @@
     >
       <div class="d-flex align-center">
         <v-img
-          alt="Vuetify Logo"
+          alt="Rota Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src="../src/assets/rotaLogo.png"
           transition="scale-transition"
           width="40"
         />
 
         <v-img
-          alt="Vuetify Name"
+          alt="app dos brother"
           class="shrink mt-1 hidden-sm-and-down"
           contain
           min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
+          src="../src/assets/appdosbrod.png"
+          width="300"
         />
       </div>
 
@@ -53,3 +53,9 @@ export default {
   }),
 };
 </script>
+
+<style >
+  #app {
+  background: left 5% / 15% 60% repeat-x src("../src/assent/rotaLogo.png");
+}
+</style>

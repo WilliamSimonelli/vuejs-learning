@@ -6,6 +6,17 @@
     height="300"
     >
     <h1> Tempurá 015</h1>
+    <v-btn @click="Tempura()"
+      elevation="2"
+      medium
+      raised
+      rounded
+      small
+      text
+    >Conhecer</v-btn>
+
+    <br>
+    <br>
     
 
     <img alt="Locombia" src="../assets/locomia.png" 
@@ -13,23 +24,41 @@
     height="300"
     >
     <h1> Locombia 017</h1>
+    <v-btn @click="loco()"
+      elevation="2"
+      medium
+      raised
+      rounded
+      small
+      text
+    >Conhecer</v-btn>
+
+    <br>
+    <br>
 
     <img alt="Jamanta" src="../assets/jamanta.png" 
     width="300" 
     height="300"
     >
     <h1> Jamanthor 018</h1>
+    <v-btn @click="func3()"
+      elevation="2"
+      medium
+      raised
+      rounded
+      small
+      text
+    >Conhecer</v-btn>
+
+    <br>
+    <br>
     
 
-  <v-btn @click="call_landing()"> Go back to menue</v-btn>
+  <v-btn @click="call_landing()"
+  elevation="6" rounded> Go back to menue</v-btn>
 
-
-
-
-
-
-
-
+  <br>
+  <br>
 
   </div>
 </template>
@@ -41,7 +70,15 @@ export default {
   call_landing(){
     console.log("calling home")
     this.$router.push('/')
-  }
+  },
+  Tempura(){
+    console.log("calling tempura")
+    this.$router.push('/moradores/tempura')
+  },
+  loco(){
+    console.log("calling loco")
+    this.$router.push('/moradores/locombia')
+  },
 },
 
 

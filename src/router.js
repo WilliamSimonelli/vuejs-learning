@@ -3,7 +3,9 @@ import Router from 'vue-router'
 import Landing from './components/Landing.vue'
 import Home from './components/Home.vue'
 import Moradores from './components/Moradores.vue'
-import HelloWorld from './components/HelloWorld'
+import HelloWorld from './components/HelloWorld.vue'
+import Tempura from './components/Tempura.vue'
+
 
 Vue.use(Router);
 
@@ -36,6 +38,13 @@ export default new Router({
         name: "helloworld",
         components: {
           default: HelloWorld
+        }
+      },
+      {
+        path: "/moradores/tempura",
+        name: "tempura",
+        components: {
+          default: Tempura
         }
       },
     ],

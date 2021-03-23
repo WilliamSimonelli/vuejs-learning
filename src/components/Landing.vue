@@ -5,23 +5,44 @@
     <p>
     <p>
     
-    <button @click="func()" class="blue"> Clique aqui para ver nosso logo! </button>  
+  <v-btn @click="func()"
+    elevation="2"
+    medium
+    raised
+    rounded
+    small
+    text
+  >Ver nosso logo</v-btn> 
     
     <p>
     <p>
     
-    <button @click="func2()" class="blue"> Clique aqui para ver os moradores! </button>  
+    <v-btn @click="func2()"
+  elevation="2"
+  medium
+  raised
+  rounded
+  small
+  text
+>clique para ver moradores</v-btn>
 
     <p>
     <p>
     
-    <button @click="func3()" class="blue"> Clique aqui para ver os Hello World! </button>  
+    <v-btn @click="func3()"
+  elevation="2"
+  medium
+  raised
+  rounded
+  small
+  text
+>clique para ver vuetify</v-btn>
 
           <div class="text-center">
             <v-menu offset-y>
               <template v-slot:activator="{ on, attrs }">
                 <v-btn
-                  color="primary"
+                  color="green"
                   dark
                   v-bind="attrs"
                   v-on="on"
