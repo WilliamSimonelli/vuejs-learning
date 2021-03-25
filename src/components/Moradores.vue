@@ -1,10 +1,14 @@
 <template>
   <div>
 
-    <img alt="Tempura" src="../assets/tempura.png" 
+    <img alt="Tempura" 
+    src="../assets/tempura.png" 
     width="300" 
-    height="300"
+    height="500"
     >
+  
+    
+
     <h1> Tempurá 015</h1>
     <v-btn @click="Tempura()"
       elevation="2"
@@ -21,7 +25,7 @@
 
     <img alt="Locombia" src="../assets/locomia.png" 
     width="300" 
-    height="300"
+    height="400"
     >
     <h1> Locombia 017</h1>
     <v-btn @click="loco()"
@@ -41,7 +45,7 @@
     height="300"
     >
     <h1> Jamanthor 018</h1>
-    <v-btn @click="func3()"
+    <v-btn @click="jah()"
       elevation="2"
       medium
       raised
@@ -78,6 +82,10 @@ export default {
   loco(){
     console.log("calling loco")
     this.$router.push('/moradores/locombia')
+  },
+  jah(){
+    console.log("calling jah")
+    this.$router.push('/moradores/jamanta')
   },
 },
 

@@ -1,7 +1,15 @@
 <template>
 
+
   <div>
-    <img alt="Rep photo" src="../assets/rota69test.png" width="300" height="175">
+    <br><br>
+
+
+
+    <img alt="Rep photo" src="../assets/instaphoto.png" width="500" height="500" >
+    
+
+    
     <p>
     <p>
     
@@ -12,6 +20,8 @@
     rounded
     small
     text
+    
+    
   >Ver nosso logo</v-btn> 
     
     <p>
@@ -24,6 +34,7 @@
   rounded
   small
   text
+  
 >clique para ver moradores</v-btn>
 
     <p>
@@ -36,6 +47,8 @@
   rounded
   small
   text
+
+  
 >clique para ver vuetify</v-btn>
 
           <div class="text-center">
@@ -61,6 +74,8 @@
               </v-list>
             </v-menu>
       </div>
+      <br>
+      <br>
 
   
   </div>

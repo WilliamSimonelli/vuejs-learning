@@ -1,46 +1,72 @@
-<template>
+ <template>
+ <body>
+   
+ 
   <v-app>
-    <v-app-bar
-      app
-      color="green"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Rota Logo"
-          class="shrink mr-2"
-          contain
-          src="../src/assets/rotaLogo.png"
-          transition="scale-transition"
-          width="40"
-        />
+    <div>
+      <v-app-bar
+        
+        color="green"
+        absolute
+        dense
+        dark
+        elevation="18"
+        style="top: -60px;"
+        scroll-off-screen = "true"
+        
+      >
+      <v-app-bar-nav-icon>
+        
+      </v-app-bar-nav-icon>
 
-        <v-img
-          alt="app dos brother"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="../src/assets/appdosbrod.png"
-          width="300"
-        />
-      </div>
+      <v-toolbar-title
+      >
+      ROTA 69 - App dos brother
+      </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://www.facebook.com/RepublicaRota69/"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Nossa página</span>
-        <v-icon>mdi-open-in-new</v-icon>
+      <v-btn icon>
+        <v-icon>mdi-heart</v-icon>
       </v-btn>
-    </v-app-bar>
 
+      <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+
+      <v-menu
+        left
+        bottom
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            icon
+            v-bind="attrs"
+            v-on="on"
+          >
+            <v-icon>mdi-dots-vertical</v-icon>
+          </v-btn>
+        </template>
+
+        <v-list>
+          <v-list-item
+            v-for="n in 5"
+            :key="n"
+            
+            @click="() => {}"
+            
+          >
+            <v-list-item-title>selecione {{ n }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+    </v-app-bar>
+  </div>
     <v-main>
       <router-view/>
     </v-main>
   </v-app>
+  </body>
 </template>
 
 <script>
@@ -51,11 +77,14 @@ export default {
   data: () => ({
     //
   }),
+  methods:{
+    func(){
+      console.log("aloooo")
+    }
+  }
 };
 </script>
 
 <style >
-  #app {
-  background: left 5% / 15% 60% repeat-x src("../src/assent/rotaLogo.png");
-}
+
 </style>

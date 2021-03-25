@@ -5,6 +5,8 @@ import Home from './components/Home.vue'
 import Moradores from './components/Moradores.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import Tempura from './components/Tempura.vue'
+import Locombia from './components/Locombia.vue'
+import Jamanta from './components/Jamanta.vue'
 
 
 Vue.use(Router);
@@ -47,7 +49,22 @@ export default new Router({
           default: Tempura
         }
       },
+      {
+        path: "/moradores/locombia",
+        name: "locombia",
+        components: {
+          default: Locombia
+        }
+      },
+      {
+        path: "/moradores/jamanta",
+        name: "jamanta",
+        components: {
+          default: Jamanta
+        }
+      },
     ],
+
     scrollBehavior: to => {
       if (to.hash) {
         return { selector: to.hash };
